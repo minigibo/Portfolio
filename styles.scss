@@ -1,0 +1,16 @@
+@use "./variables" as *;
+@use "./header";
+
+*{
+    margin: 6px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-body;
+}
+
+
+body{
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+}
