@@ -2,6 +2,7 @@
 
 .summary{
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .summary__left{
@@ -21,11 +22,15 @@
 @media screen and (min-width: 768px) {
     .summary{
         display: flex;
-        flex-direction: row-reverse;
-        
+        margin-left: 50px;
+        margin-right: 50px;
+        align-items: center;
     }
     
     .summary__desktop{
-        display: unset;
+        display: flex;
+        flex-direction: row-reverse;
+        width: auto; 
+        height: 300px ;
     }
 }
