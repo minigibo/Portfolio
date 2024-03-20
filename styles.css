@@ -20,6 +20,9 @@ header {
     text-decoration: none;
     color: darkslategray;
   }
+  header nav #nav__other:hover {
+    border-bottom: 2px solid darkslategray;
+  }
   header nav #nav__getTouch {
     border: 2px solid darkslategray;
     border-radius: 5px;
@@ -28,6 +31,30 @@ header {
   header nav #nav__getTouch:hover {
     background-color: darkslategray;
     color: #fff;
+  }
+}
+.summary {
+  padding-top: 20px;
+}
+
+.summary__left .summary__mobileHead {
+  font-size: medium;
+}
+.summary__left .summary__text {
+  font-size: 3em;
+}
+
+.summary__desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .summary {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .summary__desktop {
+    display: unset;
   }
 }
 * {

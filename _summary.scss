@@ -1,0 +1,31 @@
+@use "./variables" as *;
+
+.summary{
+    padding-top: 20px;
+}
+
+.summary__left{
+    .summary__mobileHead{
+        font-size: medium
+    }
+
+    .summary__text{
+        font-size: 3em;
+    }
+}
+
+.summary__desktop{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .summary{
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+    
+    .summary__desktop{
+        display: unset;
+    }
+}

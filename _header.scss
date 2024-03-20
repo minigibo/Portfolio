@@ -21,6 +21,12 @@ header{
                 text-decoration: none;
                 color: $primary-color;
             }
+
+            #nav__other{
+                &:hover{
+                    border-bottom: 2px solid $primary-color
+                }
+            }
         
             #nav__getTouch{
                 border: 2px solid $primary-color;
