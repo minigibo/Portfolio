@@ -141,6 +141,76 @@ header {
     grid-template-rows: auto;
   }
 }
+.projects .projects__card {
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+.projects .projects__header {
+  font-size: 2em;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.projects .projects__image {
+  background-color: darkslategray;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-radius: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+}
+.projects .projects__image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px 10px 0px 0px;
+  margin-bottom: -1px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.projects .projects__language {
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: -5px;
+}
+.projects .projects__name {
+  font-size: 2.5em;
+  margin-top: 0px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.projects p {
+  margin-bottom: 20px;
+}
+.projects .projects__tag {
+  text-decoration: none;
+  color: darkslategray;
+  border: 1px solid darkslategray;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding: 5px 10px;
+  margin-left: 0px;
+}
+.projects .projects__tag:hover {
+  background-color: darkslategray;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .projects__grid-container {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+}
+.footer {
+  background-color: darkslategray;
+}
+
 * {
   margin: 6px;
   padding: 0;
