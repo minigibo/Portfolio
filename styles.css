@@ -55,12 +55,15 @@ header {
     margin-left: 50px;
     margin-right: 50px;
     align-items: center;
+    justify-content: space-between;
   }
-  .summary__desktop {
+  .summary .summary__desktop {
     display: flex;
     flex-direction: row-reverse;
+  }
+  .summary .summary__desktop img {
+    max-height: 400px;
     width: auto;
-    height: 300px;
   }
 }
 .aboutMe {
@@ -100,6 +103,9 @@ header {
     margin-right: 50px;
     align-items: center;
   }
+  .aboutMe .aboutMe__header {
+    text-align: left;
+  }
   .aboutMe .aboutMe__image {
     display: none;
   }
@@ -129,7 +135,17 @@ header {
   height: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1160px) {
+  .skills {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .skills .skills__icons {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1161px) {
   .skills {
     margin-left: 50px;
     margin-right: 50px;
@@ -200,7 +216,17 @@ header {
   color: #fff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 875px) {
+  .projects__grid-container {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media screen and (min-width: 876px) {
   .projects__grid-container {
     margin-left: 50px;
     margin-right: 50px;
