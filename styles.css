@@ -46,6 +46,9 @@ header {
   font-size: 3em;
   margin-bottom: 40px;
 }
+.summary .summary__left .summary__text .summary__highlight {
+  background: linear-gradient(180deg, transparent 60%, rgba(47, 79, 79, 0.5) 60%);
+}
 .summary .summary__left #summary__button {
   display: flex;
   justify-content: center;

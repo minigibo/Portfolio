@@ -14,6 +14,11 @@
         .summary__text{
             font-size: 3em;
             margin-bottom: 40px;
+
+            .summary__highlight{
+                background:linear-gradient(180deg, transparent 60%, rgba($primary-color, 0.5) 60%);
+            }
+
         }
 
         #summary__button{
