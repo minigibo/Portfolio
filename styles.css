@@ -141,6 +141,9 @@ header {
     grid-template-rows: auto;
   }
 }
+.projects {
+  margin-bottom: 50px;
+}
 .projects .projects__card {
   margin-bottom: 40px;
   max-width: 100%;
@@ -207,10 +210,56 @@ header {
     grid-template-rows: auto;
   }
 }
-.footer {
+footer {
   background-color: darkslategray;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin: -12px;
+}
+footer .footer__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+footer .footer__links .footer__tag {
+  margin: 0px;
+}
+footer .footer__links .footer__tag .footer__images {
+  height: 45px;
+  width: 45px;
+  background-color: #fff;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+footer .footer__links .footer__tag .footer__images img {
+  height: 30px;
+  width: 30px;
+  display: grid;
+  background-color: #fff;
+}
+footer .footer__email {
+  margin: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .footer__email {
+    margin-left: 50px;
+  }
+  footer .footer__links {
+    margin-right: 50px;
+  }
+}
 * {
   margin: 6px;
   padding: 0;
