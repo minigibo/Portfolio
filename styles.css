@@ -34,19 +34,41 @@ header {
   }
 }
 .summary {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin: -12px;
+  padding: 40px;
+  background-color: #deebeb;
+  color: darkslategray;
 }
-
-.summary__left .summary__mobileHead {
+.summary .summary__left .summary__mobileHead {
   font-size: medium;
 }
-.summary__left .summary__text {
+.summary .summary__left .summary__text {
   font-size: 3em;
+  margin-bottom: 40px;
 }
-
-.summary__desktop {
-  display: none;
+.summary .summary__left #summary__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: darkslategray;
+  border: 2px solid darkslategray;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color;
+}
+.summary .summary__left #summary__button img {
+  width: 11px;
+  height: 10px;
+  margin-right: 5px;
+  transition: filter;
+}
+.summary .summary__left #summary__button:hover {
+  background-color: darkslategray;
+  color: #fff;
+}
+.summary .summary__left #summary__button:hover img {
+  filter: invert(1);
 }
 
 @media screen and (min-width: 768px) {
