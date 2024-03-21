@@ -1,0 +1,46 @@
+@use "./variables" as *;
+
+.skills{
+    text-align: center;
+
+    .skills__header{
+        font-size: 2em;
+        padding-top: 40px;
+        padding-bottom: 20px
+    }
+
+    .skills__text{
+        padding-bottom: 20px;
+    }
+
+    .skills__icons{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(3, 1fr);
+        padding-bottom: 40px;
+    
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    .skills{
+        margin-left: 50px;
+        margin-right: 50px;
+
+        .skills__icons{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: auto;
+        }
+    }
+}
+
+
