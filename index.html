@@ -1,181 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <p>Matt Gibson</p>
-        <nav>
-            <a href="#" id="nav__other">Home</a>
-            <a href="#" id="nav__other">About</a>
-            <a href="#" id="nav__other">Project</a>
-            <a href="#" id="nav__getTouch">Get in Touch</a>
-        </nav>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="header__mobile">
+      <nav id="myLinks">
+        <a class="links" href="#home" onclick="toggleNav()">Home</a>
+        <a class="links" href="#about" onclick="toggleNav()">About</a>
+        <a class="links" href="#project" onclick="toggleNav()">Work</a>
+      </nav>
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <i class="fa fa-bars">MENU</i>
+      </a>
+    </header>
+    <header class="header__desktop">
+      <p>Matt Gibson</p>
+      <nav>
+        <a href="#" id="nav__other">Home</a>
+        <a href="#" id="nav__other">About</a>
+        <a href="#" id="nav__other">Project</a>
+        <a href="#" id="nav__getTouch">Get in Touch</a>
+      </nav>
     </header>
 
     <seciton class="summary">
-        <div class="summary__left">
-            <div class="summary__mobileHead">
-                <p>&#128075;Hey! I'm Matt Gibson</p>
-            </div>
-            <h1 class="summary__text">
-                A Junior <span class="summary__highlight">Software Developer </span> based in the UK.
-            </h1>
-            <a href="#" id="summary__button">Take a look at my work<img src="./images/Arrow.png"></a>
-        </div>
-
+      <div class="summary__heading">
+        <h1 class="summary__text">
+          A Junior
+          <span class="summary__highlight">Software Developer </span> based in
+          the UK.
+        </h1>
+      </div>
+      <div class="summary__button">
+        <a href="#">Take a look at my work</a>
+      </div>
     </seciton>
 
-    <main>        
-        <section class="skills">
-            <h1 class="skills__header">
-                <span class="skills_highlight">Technical Skills</span>
-            </h1>
-            <div class="skills__text">
-                <p>
-                    Below are some of the skills developed through my coding career
-                </p>
+    <main>
+      <section class="skills">
+        <h1 class="skills__header">
+          <span class="skills_highlight">Technical Skills</span>
+        </h1>
+        <div class="skills__text">
+          <p>Below are some of the skills developed through my coding career</p>
+        </div>
+        <div class="skills__icons">
+          <div><img src="./images/SkillSpringBoot.png" /></div>
+          <div><img src="./images/SkillJava.png" /></div>
+          <div><img src="./images/SkillReact.png" /></div>
+          <div><img src="./images/SkillBEM.png" /></div>
+          <div><img src="./images/SkillSCSS.png" /></div>
+          <div><img src="./images/SkillJavaScript.png" /></div>
+          <div><img src="./images/SkillCSS3.png" /></div>
+          <div><img src="./images/SkillHTML5.png" /></div>
+          <div><img src="./images/SkillGit.png" /></div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h1 class="projects__header">
+          <span class="projects__highlight">My Projects</span>
+        </h1>
+
+        <div class="projects__grid-container">
+          <div class="projects__card">
+            <div class="projects__image">
+              <img src="./images/projectCard.png" />
             </div>
-            <div class="skills__icons">
-                <div><img src="./images/SkillSpringBoot.png" ></div>
-                <div><img src="./images/SkillJava.png" ></div>
-                <div><img src="./images/SkillReact.png" ></div>
-                <div><img src="./images/SkillBEM.png" ></div>
-                <div><img src="./images/SkillSCSS.png" ></div>
-                <div><img src="./images/SkillJavaScript.png" ></div>
-                <div><img src="./images/SkillCSS3.png" ></div>
-                <div><img src="./images/SkillHTML5.png" ></div>
-                <div><img src="./images/SkillGit.png" ></div>
+            <p class="projects__language">Language Used</p>
+            <p class="projects__name">Name of Project</p>
+            <p>Brief description of the project</p>
+            <div class="projects__button">
+              <a href="#" class="projects__tag">Code &lt;/&gt;</a>
+              <a href="#" class="projects__tag">Preview &lt;/&gt;</a>
             </div>
-        </section>
+          </div>
 
-        <section class="projects">
-            <h1 class="projects__header">
-                <span class="projects__highlight">My Projects</span>
-            </h1>
-
-            <div class="projects__grid-container">
-                <div class="projects__card">
-                    <div class="projects__image">
-                        <img src="./images/projectCard.png">
-                    </div>
-                    <p class="projects__language">Language Used</p>
-                    <p class="projects__name">Name of Project</p>
-                    <p>Brief description of the project</p>
-                    <div class="projects__button">
-                        <a href="#" class="projects__tag">Code &lt;/&gt;</a>
-                        <a href="#" class="projects__tag">Preview &lt;/&gt;</a>
-                    </div>
-                </div>
-
-                <div class="projects__card">
-                    <div class="projects__image">
-                        <img src="./images/projectCard.png">
-                    </div>
-                    <p class="projects__language">Language Used</p>
-                    <p class="projects__name">Name of Project</p>
-                    <p>Brief description of the project</p>
-                    <div class="projects__button">
-                        <a href="#" class="projects__tag">Code &lt;/&gt;</a>
-                        <a href="#" class="projects__tag">Preview &lt;/&gt;</a>
-                    </div>
-                </div>
-
-                <div class="projects__card">
-                    <div class="projects__image">
-                        <img src="./images/projectCard.png">
-                    </div>
-                    <p class="projects__language">Language Used</p>
-                    <p class="projects__name">Name of Project</p>
-                    <p>Brief description of the project</p>
-                    <div class="projects__button">
-                        <a href="#" class="projects__tag">Code &lt;/&gt;</a>
-                        <a href="#" class="projects__tag">Preview &lt;/&gt;</a>
-                    </div>
-                </div>
-
-                <div class="projects__card">
-                    <div class="projects__image">
-                        <img src="./images/projectCard.png">
-                    </div>
-                    <p class="projects__language">Language Used</p>
-                    <p class="projects__name">Name of Project</p>
-                    <p>Brief description of the project</p>
-                    <div class="projects__button">
-                        <a href="#" class="projects__tag">Code &lt;/&gt;</a>
-                        <a href="#" class="projects__tag">Preview &lt;/&gt;</a>
-                    </div>
-                </div>
-
-                <div class="projects__card">
-                    <div class="projects__image">
-                        <img src="./images/projectCard.png">
-                    </div>
-                    <p class="projects__language">Language Used</p>
-                    <p class="projects__name">Name of Project</p>
-                    <p>Brief description of the project</p>
-                    <div class="projects__button">
-                        <a href="#" class="projects__tag">Code &lt;/&gt;</a>
-                        <a href="#" class="projects__tag">Preview &lt;/&gt;</a>
-                    </div>
-                </div>
-
-                <div class="projects__card">
-                    <div class="projects__image">
-                        <img src="./images/projectCard.png">
-                    </div>
-                    <p class="projects__language">Language Used</p>
-                    <p class="projects__name">Name of Project</p>
-                    <p>Brief description of the project</p>
-                    <div class="projects__button">
-                        <a href="#" class="projects__tag">Code &lt;/&gt;</a>
-                        <a href="#" class="projects__tag">Preview &lt;/&gt;</a>
-                    </div>
-                </div>
+          <div class="projects__card">
+            <div class="projects__image">
+              <img src="./images/projectCard.png" />
             </div>
-        </section>
+            <p class="projects__language">Language Used</p>
+            <p class="projects__name">Name of Project</p>
+            <p>Brief description of the project</p>
+            <div class="projects__button">
+              <a href="#" class="projects__tag">Code &lt;/&gt;</a>
+              <a href="#" class="projects__tag">Preview &lt;/&gt;</a>
+            </div>
+          </div>
 
-        <section class="aboutMe">
-            <div class="aboutMe__imageDesktop">
-                <img src="./images/MePic.jpg">
+          <div class="projects__card">
+            <div class="projects__image">
+              <img src="./images/projectCard.png" />
             </div>
-            <div class="aboutMe__desktop">
-                <h1 class="aboutMe__header">
-                    About Me
-                </h1>
-                <div class="aboutMe__image">
-                    <img src="./images/MePic.jpg">
-                </div>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem dignissimos cumque rerum quia! Aliquid, architecto. Quae adipisci sit quod expedita perferendis et id dicta illum obcaecati, officiis rerum fugit reprehenderit.
-                </p>
+            <p class="projects__language">Language Used</p>
+            <p class="projects__name">Name of Project</p>
+            <p>Brief description of the project</p>
+            <div class="projects__button">
+              <a href="#" class="projects__tag">Code &lt;/&gt;</a>
+              <a href="#" class="projects__tag">Preview &lt;/&gt;</a>
             </div>
-        </section>
+          </div>
+
+          <div class="projects__card">
+            <div class="projects__image">
+              <img src="./images/projectCard.png" />
+            </div>
+            <p class="projects__language">Language Used</p>
+            <p class="projects__name">Name of Project</p>
+            <p>Brief description of the project</p>
+            <div class="projects__button">
+              <a href="#" class="projects__tag">Code &lt;/&gt;</a>
+              <a href="#" class="projects__tag">Preview &lt;/&gt;</a>
+            </div>
+          </div>
+
+          <div class="projects__card">
+            <div class="projects__image">
+              <img src="./images/projectCard.png" />
+            </div>
+            <p class="projects__language">Language Used</p>
+            <p class="projects__name">Name of Project</p>
+            <p>Brief description of the project</p>
+            <div class="projects__button">
+              <a href="#" class="projects__tag">Code &lt;/&gt;</a>
+              <a href="#" class="projects__tag">Preview &lt;/&gt;</a>
+            </div>
+          </div>
+
+          <div class="projects__card">
+            <div class="projects__image">
+              <img src="./images/projectCard.png" />
+            </div>
+            <p class="projects__language">Language Used</p>
+            <p class="projects__name">Name of Project</p>
+            <p>Brief description of the project</p>
+            <div class="projects__button">
+              <a href="#" class="projects__tag">Code &lt;/&gt;</a>
+              <a href="#" class="projects__tag">Preview &lt;/&gt;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="aboutMe">
+        <div class="aboutMe__imageDesktop">
+          <img src="./images/MePic.jpg" />
+        </div>
+        <div class="aboutMe__desktop">
+          <h1 class="aboutMe__header">About Me</h1>
+          <div class="aboutMe__image">
+            <img src="./images/MePic.jpg" />
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+            dignissimos cumque rerum quia! Aliquid, architecto. Quae adipisci
+            sit quod expedita perferendis et id dicta illum obcaecati, officiis
+            rerum fugit reprehenderit.
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer__links">
-            <a href="#" class="footer__tag">
-                <div class="footer__images">
-                    <img src="./images/GitHub.png">
-                </div>
-            </a>
-            <a href="#" class="footer__tag">
-                <div class="footer__images">
-                    <img src="./images/LinkedIn.png">
-                </div>
-            </a>
-            <a href="#" class="footer__tag">
-                <div class="footer__images">
-                    <img src="./images/CV.png">
-                </div>
-            </a>
-        </div>
-        <p class="footer__email">mattgibson18@outlook.com</p>
+      <div class="footer__links">
+        <a href="#" class="footer__tag">
+          <div class="footer__images">
+            <img src="./images/GitHub.png" />
+          </div>
+        </a>
+        <a href="#" class="footer__tag">
+          <div class="footer__images">
+            <img src="./images/LinkedIn.png" />
+          </div>
+        </a>
+        <a href="#" class="footer__tag">
+          <div class="footer__images">
+            <img src="./images/CV.png" />
+          </div>
+        </a>
+      </div>
+      <p class="footer__email">mattgibson18@outlook.com</p>
     </footer>
-</body>
+  </body>
 </html>
