@@ -9,12 +9,16 @@
   .summary__heading {
     text-align: left;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     width: 80%;
     font-size: 2.5em;
+
+    p {
+      font-size: x-large;
+    }
 
     .summary__text {
       .summary__highlight {
@@ -26,15 +30,9 @@
       }
     }
   }
-  #summary__button {
-    text-align: center;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 90%;
+
+  #summary__desktop {
+    display: none;
   }
 }
 
