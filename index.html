@@ -11,11 +11,11 @@
     <header class="header__mobile">
       <nav id="myLinks">
         <a class="links" href="#home" onclick="toggleNav()">Home</a>
-        <a class="links" href="#about" onclick="toggleNav()">About</a>
-        <a class="links" href="#project" onclick="toggleNav()">Work</a>
+        <a class="links" href="#about" onclick="toggleNav()">Work</a>
+        <a class="links" href="#project" onclick="toggleNav()">About</a>
       </nav>
       <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
-        <i class="fa fa-bars">MENU</i>
+        <i class="header__burger">MENU</i>
       </a>
     </header>
     <header class="header__desktop">
@@ -28,7 +28,7 @@
       </nav>
     </header>
 
-    <seciton class="summary">
+    <section class="summary">
       <div class="summary__heading">
         <h1 class="summary__text">
           A Junior
@@ -36,10 +36,13 @@
           the UK.
         </h1>
       </div>
-      <div class="summary__button">
-        <a href="#">Take a look at my work</a>
+      <div id="summary__button">
+        <a href="#about"
+          ><button class="button">
+            View my work <i class="fas fa-arrow-right"></i></button
+        ></a>
       </div>
-    </seciton>
+    </section>
 
     <main>
       <section class="skills">
