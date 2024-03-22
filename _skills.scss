@@ -1,14 +1,16 @@
 @use "./variables" as *;
 
-// Need to switch the skills orders to be the right way round for the desktop. Also need all the skills icons to be the same size
-
 .skills{
     text-align: center;
 
     .skills__header{
         font-size: 2em;
-        padding-top: 40px;
-        padding-bottom: 20px
+        padding-top: 80px;
+        padding-bottom: 40px;
+        
+        .skills_highlight{
+            background:linear-gradient(180deg, transparent 60%, rgba($tertiary-color, 0.8) 20%);
+        }
     }
 
     .skills__text{
@@ -20,14 +22,13 @@
         grid-template-columns: repeat(3, 1fr); 
         grid-template-rows: repeat(3, 1fr);
         padding-bottom: 40px;
-    
+
         img{
             max-width: 100%;
             height: auto;
+            filter: invert(22%) sepia(7%) saturate(2786%) hue-rotate(131deg) brightness(103%) contrast(80%);
         }
-    
-    }
-
+      }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1160px){
