@@ -263,7 +263,7 @@
 .aboutMe .aboutMe__header {
   text-align: center;
   font-size: 2em;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
 }
 .aboutMe p {
   padding-top: 50px;
@@ -278,6 +278,12 @@
   left: 0;
   height: 100px;
   padding-left: 10px;
+}
+.aboutMe .aboutMe__image #squiggle {
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+  max-height: 20px;
 }
 .aboutMe .aboutMe__image #portrait {
   display: block;
@@ -314,13 +320,15 @@ footer {
   background-color: #2f4f4f;
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
   margin: -12px;
 }
 footer .footer__links {
+  padding-left: 20vw;
+  padding-right: 20vw;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin: 0px;
 }
@@ -343,6 +351,7 @@ footer .footer__links .footer__tag .footer__images img {
   background-color: #fff;
 }
 footer .footer__email {
+  padding-top: 20px;
   margin: 0px;
 }
 

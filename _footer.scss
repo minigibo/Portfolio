@@ -1,62 +1,62 @@
 @use "./variables" as *;
 
-footer{
-    background-color: $primary-color;
-    color: $secondary-color;
-    text-align: center;
-    padding: 20px;
-    margin: -12px;
+footer {
+  background-color: $primary-color;
+  color: $secondary-color;
+  text-align: center;
+  padding: 40px;
+  margin: -12px;
 
-    .footer__links{
-        display: flex;
-        flex-direction: row;
+  .footer__links {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+
+    .footer__tag {
+      margin: 0px;
+
+      .footer__images {
+        height: 45px;
+        width: 45px;
+        background-color: $secondary-color;
+        display: grid;
         justify-content: center;
         align-items: center;
-        margin: 0px;
+        border-radius: 30px;
 
-        .footer__tag{
-            margin: 0px;
-
-            .footer__images{
-                height: 45px;
-                width: 45px;
-                background-color: $secondary-color;
-                display: grid;
-                justify-content: center;
-                align-items: center;
-                border-radius: 30px;
-
-                img {
-                    height: 30px;
-                    width: 30px;
-                    display: grid;
-                    background-color: $secondary-color;
-                }
-            }
+        img {
+          height: 30px;
+          width: 30px;
+          display: grid;
+          background-color: $secondary-color;
         }
+      }
     }
+  }
 
-    .footer__email{
-        margin: 0px;
-    }
-
+  .footer__email {
+    padding-top: 20px;
+    margin: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
 
-    footer{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
-
-        .footer__email{
-            margin-left: 50px;
-        }
-
-        .footer__links{
-            margin-right: 50px;
-        }
+    .footer__email {
+      margin-left: 50px;
     }
-}
 
+    .footer__links {
+      margin-right: 50px;
+    }
+  }
+}
