@@ -1,57 +1,68 @@
 @use "./variables" as *;
 
-.aboutMe{
-    display: grid;
-    gap: 15px;
-    grid-template-rows: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
+.aboutMe {
+  display: grid;
+  gap: 15px;
+  grid-template-rows: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-    .aboutMe__header{
-        text-align: center;
-        font-size: 2em;
-        padding-bottom: 20px;
+  .aboutMe__header {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 70px;
+  }
+
+  p {
+    padding-top: 50px;
+  }
+
+  .aboutMe__image {
+    position: relative;
+    display: inline-block;
+
+    #circle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100px;
+      padding-left: 10px;
     }
 
-    p{
-        padding-top: 20px;
+    #portrait {
+      display: block;
+      width: 80%;
+      padding-top: 50px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: -1;
     }
+  }
 
-    img{
-        width: 70vw;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-    }
-    
-    .aboutMe__image{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .aboutMe__imageDesktop{
-        display: none;
-    }
+  .aboutMe__desktop {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .aboutMe{
-        display: flex;
-        margin-left: 50px;
-        margin-right: 50px;
-        align-items: center;
+  .aboutMe {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
 
-        .aboutMe__header{
-            text-align: left;
-        }
-
-        .aboutMe__image{
-            display: none;
-        }
-
-        .aboutMe__imageDesktop{
-            display: flex;
-        }        
+    .aboutMe__header {
+      text-align: left;
     }
+
+    .aboutMe__image {
+      display: none;
+    }
+
+    .aboutMe__imageDesktop {
+      display: flex;
+    }
+  }
 }

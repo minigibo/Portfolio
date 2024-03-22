@@ -129,18 +129,22 @@
   background: linear-gradient(180deg, transparent 60%, rgba(186, 232, 232, 0.8) 20%);
 }
 .skills .skills__text {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 .skills .skills__icons {
   display: grid;
+  gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   padding-bottom: 40px;
 }
-.skills .skills__icons img {
+.skills .skills__icons div img {
   max-width: 100%;
   height: auto;
   filter: invert(22%) sepia(7%) saturate(2786%) hue-rotate(131deg) brightness(103%) contrast(80%);
+}
+.skills .skills__icons div:last-child {
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1160px) {
@@ -259,23 +263,33 @@
 .aboutMe .aboutMe__header {
   text-align: center;
   font-size: 2em;
-  padding-bottom: 20px;
+  padding-bottom: 70px;
 }
 .aboutMe p {
-  padding-top: 20px;
-}
-.aboutMe img {
-  width: 70vw;
-  width: 100%;
-  height: 100%;
-  margin: 0;
+  padding-top: 50px;
 }
 .aboutMe .aboutMe__image {
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  display: inline-block;
 }
-.aboutMe .aboutMe__imageDesktop {
+.aboutMe .aboutMe__image #circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  padding-left: 10px;
+}
+.aboutMe .aboutMe__image #portrait {
+  display: block;
+  width: 80%;
+  padding-top: 50px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: -1;
+}
+.aboutMe .aboutMe__desktop {
   display: none;
 }
 
