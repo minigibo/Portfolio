@@ -386,7 +386,7 @@ footer .footer__links .footer__tag {
 footer .footer__links .footer__tag .footer__images {
   height: 45px;
   width: 45px;
-  background-color: #fff;
+  background-color: #BAE8E8;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -396,7 +396,7 @@ footer .footer__links .footer__tag .footer__images img {
   height: 30px;
   width: 30px;
   display: grid;
-  background-color: #fff;
+  background-color: #BAE8E8;
 }
 footer .footer__email {
   padding-top: 20px;
@@ -412,9 +412,16 @@ footer .footer__email {
   }
   footer .footer__email {
     margin-left: 50px;
+    padding-top: 0px;
   }
   footer .footer__links {
     margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+  }
+  footer .footer__links .footer__tag {
+    margin-left: 10px;
   }
 }
 * {

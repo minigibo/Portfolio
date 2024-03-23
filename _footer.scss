@@ -22,7 +22,7 @@ footer {
       .footer__images {
         height: 45px;
         width: 45px;
-        background-color: $secondary-color;
+        background-color: $tertiary-color;
         display: grid;
         justify-content: center;
         align-items: center;
@@ -32,7 +32,7 @@ footer {
           height: 30px;
           width: 30px;
           display: grid;
-          background-color: $secondary-color;
+          background-color: $tertiary-color;
         }
       }
     }
@@ -53,10 +53,18 @@ footer {
 
     .footer__email {
       margin-left: 50px;
+      padding-top: 0px;
     }
 
     .footer__links {
       margin-right: 50px;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 15px;
+
+      .footer__tag {
+        margin-left: 10px;
+      }
     }
   }
 }
