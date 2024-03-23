@@ -55,21 +55,24 @@
 
 @media screen and (min-width: 768px) {
   .aboutMe {
-    display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    align-items: center;
-
-    .aboutMe__header {
-      text-align: left;
-    }
-
-    .aboutMe__image {
+    .aboutMe__mobile {
       display: none;
     }
 
-    .aboutMe__imageDesktop {
+    .aboutMe__desktop {
       display: flex;
+      flex-direction: row;
+      padding: 30px;
+
+      .aboutMe__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+          font-size: 3em;
+        }
+      }
     }
   }
 }
