@@ -1,6 +1,8 @@
 @use "./variables" as *;
 
 .header__mobile {
+  position: sticky;
+  top: 0;
   nav {
     position: absolute;
     right: 0;
