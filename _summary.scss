@@ -45,6 +45,7 @@
     justify-content: center;
     text-align: center;
     z-index: unset;
+    background-color: lighten($primary-color, 65%);
 
     .summary__mobile {
       display: none;
@@ -56,6 +57,7 @@
       flex-direction: column;
       font-size: 3em;
       align-items: center;
+      padding: 80px;
 
       p {
         font-size: large;
@@ -82,6 +84,23 @@
             transform: rotate(90deg);
           }
         }
+      }
+    }
+
+    .summary__squiggle {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -0.5rem;
+        left: -0.5rem;
+        right: 0rem;
+        height: 0.75rem;
+        z-index: 0;
+        background-image: url("./images/squiggle1.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
       }
     }
   }
