@@ -122,21 +122,6 @@
     font-size: 3em;
     align-items: center;
   }
-  .summary #summary__desktop .summary__squiggle {
-    position: relative;
-  }
-  .summary #summary__desktop .summary__squiggle::after {
-    content: "";
-    position: absolute;
-    bottom: -0.125rem;
-    left: -0.5rem;
-    right: -0.5rem;
-    height: 0.75rem;
-    z-index: -1;
-    background-image: url("squiggle1.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   .summary #summary__desktop p {
     font-size: large;
   }
