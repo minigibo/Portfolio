@@ -6,6 +6,10 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript" src="app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a6f8573d91.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header__mobile">
@@ -19,7 +23,7 @@
       </a>
     </header>
     <header class="header__desktop">
-      <p>Matt Gibson</p>
+      <p>Matt <span>Gibson</span></p>
       <nav>
         <a href="#" id="nav__other">Home</a>
         <a href="#" id="nav__other">About</a>
@@ -29,7 +33,7 @@
     </header>
 
     <section class="summary">
-      <div class="summary__heading">
+      <div class="summary__mobile">
         <p>&#128075;Hey! I'm Matt Gibson</p>
         <h1 class="summary__text">
           A Junior
@@ -38,9 +42,15 @@
         </h1>
       </div>
       <div id="summary__desktop">
-        <a href="#"
-          ><button class="button">
-            Take a look at my work<i class="fas fa-arrow-right"></i></button
+        <p>Hey! I'm Matt Gibson&#128075;</p>
+        <h1 class="summary__text">
+          A Junior
+          <span class="summary__squiggle">Software Developer </span> based in
+          the UK.
+        </h1>
+        <!-- <img src="./images/squiggle1.svg" /> -->
+        <a href="#" class="summary__button"
+          >Take a look at my work <i class="fas fa-arrow-right"></i
         ></a>
       </div>
     </section>

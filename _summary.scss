@@ -6,7 +6,7 @@
   height: 100vh;
   z-index: -1;
 
-  .summary__heading {
+  .summary__mobile {
     text-align: left;
     position: absolute;
     top: 50%;
@@ -42,15 +42,63 @@
     margin-left: 50px;
     margin-right: 50px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    z-index: unset;
 
-    .summary__desktop {
+    .summary__mobile {
+      display: none;
+    }
+
+    #summary__desktop {
+      display: unset;
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: column;
+      font-size: 3em;
+      align-items: center;
 
-      img {
-        max-height: 400px;
-        width: auto;
+      .summary__squiggle {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -0.125rem;
+          left: -0.5rem;
+          right: -0.5rem;
+          height: 0.75rem;
+          z-index: -1;
+          background-image: url("squiggle1.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      p {
+        font-size: large;
+      }
+
+      .summary__button {
+        margin-top: 30px;
+        width: 40%;
+        text-decoration: none;
+        color: $primary-color;
+        font-size: large;
+        font-weight: bold;
+        border: 2px solid $primary-color;
+        background-color: $tertiary-color;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+        transition: all 0.5s;
+
+        &:hover {
+          background-color: $primary-color;
+          color: $secondary-color;
+          i {
+            transform: rotate(90deg);
+          }
+        }
       }
     }
   }

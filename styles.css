@@ -49,8 +49,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 20px 50px 30px 50px;
+  }
+  .header__desktop span {
+    font-weight: bold;
   }
   .header__desktop nav {
     display: flex;
@@ -80,7 +82,7 @@
   height: 100vh;
   z-index: -1;
 }
-.summary .summary__heading {
+.summary .summary__mobile {
   text-align: left;
   position: absolute;
   top: 50%;
@@ -90,10 +92,10 @@
   width: 80%;
   font-size: 2.5em;
 }
-.summary .summary__heading p {
+.summary .summary__mobile p {
   font-size: x-large;
 }
-.summary .summary__heading .summary__text .summary__highlight {
+.summary .summary__mobile .summary__text .summary__highlight {
   background: linear-gradient(180deg, transparent 60%, rgba(186, 232, 232, 0.8) 20%);
 }
 .summary #summary__desktop {
@@ -106,15 +108,58 @@
     margin-left: 50px;
     margin-right: 50px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    z-index: unset;
   }
-  .summary .summary__desktop {
+  .summary .summary__mobile {
+    display: none;
+  }
+  .summary #summary__desktop {
+    display: unset;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    font-size: 3em;
+    align-items: center;
   }
-  .summary .summary__desktop img {
-    max-height: 400px;
-    width: auto;
+  .summary #summary__desktop .summary__squiggle {
+    position: relative;
+  }
+  .summary #summary__desktop .summary__squiggle::after {
+    content: "";
+    position: absolute;
+    bottom: -0.125rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    height: 0.75rem;
+    z-index: -1;
+    background-image: url("squiggle1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .summary #summary__desktop p {
+    font-size: large;
+  }
+  .summary #summary__desktop .summary__button {
+    margin-top: 30px;
+    width: 40%;
+    text-decoration: none;
+    color: #2f4f4f;
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid #2f4f4f;
+    background-color: #BAE8E8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    transition: all 0.5s;
+  }
+  .summary #summary__desktop .summary__button:hover {
+    background-color: #2f4f4f;
+    color: #fff;
+  }
+  .summary #summary__desktop .summary__button:hover i {
+    transform: rotate(90deg);
   }
 }
 .skills {
@@ -180,7 +225,7 @@
 .projects .projects__header {
   font-size: 2em;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 70px;
   text-align: center;
 }
 .projects .projects__header .projects__highlight {

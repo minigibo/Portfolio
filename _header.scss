@@ -54,8 +54,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 20px 50px 30px 50px;
+
+    span {
+      font-weight: bold;
+    }
 
     nav {
       display: flex;
