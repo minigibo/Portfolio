@@ -1,0 +1,64 @@
+@use "./variables" as *;
+
+.skills {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: $background-color;
+
+  .skills__header {
+    font-size: 2em;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .skills__text {
+    padding-bottom: 50px;
+  }
+
+  .skills__icons {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-bottom: 40px;
+
+    div {
+      img {
+        max-width: 100%;
+        height: auto;
+        filter: invert(22%) sepia(7%) saturate(2786%) hue-rotate(131deg)
+          brightness(103%) contrast(80%);
+      }
+      &:last-child {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1160px) {
+  .skills {
+    margin-left: 50px;
+    margin-right: 50px;
+
+    .skills__icons {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1161px) {
+  .skills {
+    margin-left: 50px;
+    margin-right: 50px;
+
+    .skills__icons {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(9, 1fr);
+      grid-template-rows: auto;
+    }
+  }
+}

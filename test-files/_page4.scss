@@ -1,0 +1,112 @@
+@use "./variables" as *;
+
+.aboutMe {
+  display: grid;
+  gap: 15px;
+  grid-template-rows: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 20px;
+  }
+
+  p {
+    padding-top: 50px;
+  }
+
+  .aboutMe__image {
+    position: relative;
+    display: inline-block;
+
+    #circle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100px;
+      padding-left: 10px;
+      @media screen and (min-width: 768px) {
+        animation: moveCircle 10s linear infinite,
+          rotateCircle 10s linear infinite;
+      }
+    }
+
+    #squiggle {
+      position: absolute;
+      bottom: 40px;
+      right: 10px;
+      max-height: 20px;
+    }
+
+    #portrait {
+      display: block;
+      width: 80%;
+      padding-top: 50px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: -1;
+    }
+  }
+
+  .aboutMe__desktop {
+    display: none;
+  }
+}
+
+@keyframes moveCircle {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 80%;
+  }
+  100% {
+    left: 0;
+  }
+}
+#circle {
+  animation: rotate 10s linear forwards;
+
+  @media screen and (max-width: 767px) {
+    animation: none;
+  }
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutMe {
+    .aboutMe__mobile {
+      display: none;
+    }
+
+    .aboutMe__desktop {
+      display: flex;
+      flex-direction: row;
+      padding: 30px;
+
+      .aboutMe__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+          font-size: 3em;
+        }
+      }
+    }
+  }
+}
