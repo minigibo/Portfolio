@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 $font-body: "IBM Plex Sans", "sans-serif";
 
-$background-color:fff;
+$background-color: #fff;
 $primary-color: #2f4f4f;
 $secondary-color: #fff;
-$tertiary-color: #BAE8E8;
-
-
-
+$tertiary-color: #bae8e8;
+$summary-color: #9daee2;
+$highlight-color: #e31b6d;
