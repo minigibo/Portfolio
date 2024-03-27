@@ -1,13 +1,16 @@
+// changes display of sidebar to flex on click
 function showSidebar() {
   const sidebar = document.querySelector(".sidebar");
   sidebar.style.display = "flex";
 }
 
+// changes dispay of sidebar back to original none
 function hideSidebar() {
   const sidebar = document.querySelector(".sidebar");
   sidebar.style.display = "none";
 }
 
+// function to write out the summary text using typewriter effect JS
 var app = document.getElementById("app");
 
 var typewriter = new Typewriter(app, {

@@ -1,9 +1,9 @@
 @use "./variables" as *;
 @use "./nav";
-@use "./page1";
-@use "./page2";
-@use "./page3";
-@use "./page4";
+@use "./page1-summary";
+@use "./page2-skills";
+@use "./page3-projects";
+@use "./page4-aboutMe";
 @use "./footer";
 
 * {
